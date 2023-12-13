@@ -568,8 +568,8 @@
 		<script>
 			$("#gform").submit((e)=>{
 				e.preventDefault()
-				var formData = new FormData(document.getElementById('gform'));
-				google.script.url.processForm(formData);
+				//var formData = new FormData(document.getElementById('gform'));
+				//google.script.url.processForm(formData);
 				$.ajax({
 					url:"https://script.google.com/macros/s/AKfycbxfWsyFe28VOvntgsQ8doWWqdfmYSjwnIV4Q4SsvN72avnPYVGA28S_BSVdyYRXeIY/exec",
 					data:$("#gform").serialize(),
